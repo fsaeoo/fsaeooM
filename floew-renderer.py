@@ -1,5 +1,5 @@
 from flask import *
-from FloewMarker import floewParser
+import floewParser
 
 app = Flask(__name__)
 @app.route("/")
