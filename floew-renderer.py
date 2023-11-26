@@ -1,10 +1,10 @@
 from flask import *
-import floewParser
+import fsaeoMParser
 
 app = Flask(__name__)
 @app.route("/")
 def homepage(): 
-    template =floewParser.fparse("""
+    template =fsaeoMParser.fparse("""
     @~~ comment
     text
                                       ;;text;;
@@ -20,7 +20,7 @@ def homepage():
 
 app.run(debug=True)
 
-# print(floewParser.fparse("""@~~ comment <br>
+# print(fsaeoMParser.fparse("""@~~ comment <br>
 #      newline here //italic//
 #     ;;bold;; """))
 
