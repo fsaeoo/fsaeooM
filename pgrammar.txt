@@ -1,0 +1,12 @@
+COMMENTARY
+@~~ text (parsed to the end of line) 
+TEXT
+bold : ;; text ;;
+italic : \\ text \\
+underline : __ text __
+strikethrough : `` text ``
+code : ~~ text ~~
+HEADINGS
+# heading
+
+
