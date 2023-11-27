@@ -144,17 +144,3 @@ def fparse(fparser_arg):
 
 
     return fparse_text
-
-
-print(fparse("""
-    @~~ comment
-    text
-    ;;text;;
-    //text// 
-    __text__ 
-    ``text`` 
-    ~~text
-      text~~ 
-      #heading#
-      text
-                                        """))
