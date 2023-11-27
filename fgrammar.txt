@@ -7,6 +7,6 @@ underline : __ text __
 strikethrough : `` text ``
 code : ~~ text ~~
 HEADINGS
-# heading
+# heading (parsed to the end of line) 
 
 
