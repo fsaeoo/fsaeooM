@@ -1,12 +1,16 @@
 COMMENTARY
 @~~ text (parsed to the end of line) 
 TEXT
-bold : ;; text ;;
-italic : \\ text \\
-underline : __ text __
-strikethrough : `` text ``
-code : ~~ text ~~
+bold : ;;text;;
+italic : \\text\\
+underline : __text __
+strikethrough : ``text``
+code : ~~text~~
 HEADINGS
-# heading (parsed to the end of line) 
-
+#heading#
+##heading##
+###heading###
+####heading####
+#####heading#####
+######heading######
 
