@@ -80,7 +80,7 @@ def fparse(fparser_arg):
 
 #####################H6#####################
     fparse_text = temp
-    temp = re.sub("######", "<h6>",fparse_text, flags=re.MULTILINE)
+    temp = re.sub("#6#", "<h6>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<h6>[\s|$|\n]", "</h6>",temp, flags=re.MULTILINE)
     temp = re.sub("<h6>.$", "</h6>",fparse_text, flags=re.MULTILINE)
     temp = re.sub("</h6>", "</h6> ",fparse_text, flags=re.MULTILINE)
@@ -88,7 +88,7 @@ def fparse(fparser_arg):
 
 #####################H5#####################
     fparse_text = temp
-    temp = re.sub("#####", "<h5>",fparse_text, flags=re.MULTILINE)
+    temp = re.sub("#5#", "<h5>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<h5>[\s|$|\n]", "</h5>",temp, flags=re.MULTILINE)
     temp = re.sub("<h5>.$", "</h5>",fparse_text, flags=re.MULTILINE)
     temp = re.sub("</h5>", "</h5> ",fparse_text, flags=re.MULTILINE)
@@ -96,7 +96,7 @@ def fparse(fparser_arg):
 
 #####################H4#####################
     fparse_text = temp
-    temp = re.sub("####", "<h4>",fparse_text, flags=re.MULTILINE)
+    temp = re.sub("#4#", "<h4>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<h4>[\s|$|\n]", "</h4>",temp, flags=re.MULTILINE)
     temp = re.sub("<h4>.$", "</h4>",fparse_text, flags=re.MULTILINE)
     temp = re.sub("</h4>", "</h4> ",fparse_text, flags=re.MULTILINE)
@@ -104,7 +104,7 @@ def fparse(fparser_arg):
 
 #####################H3#####################
     fparse_text = temp
-    temp = re.sub("###", "<h3>",fparse_text, flags=re.MULTILINE)
+    temp = re.sub("#3#", "<h3>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<h3>[\s|$|\n]", "</h3>",temp, flags=re.MULTILINE)
     temp = re.sub("<h3>.$", "</h3>",fparse_text, flags=re.MULTILINE)
     temp = re.sub("</h3>", "</h3> ",fparse_text, flags=re.MULTILINE)
@@ -112,7 +112,7 @@ def fparse(fparser_arg):
 
 #####################H2#####################
     fparse_text = temp
-    temp = re.sub("##", "<h2>",fparse_text, flags=re.MULTILINE)
+    temp = re.sub("#2#", "<h2>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<h2>[\s|$|\n]", "</h2>",temp, flags=re.MULTILINE)
     temp = re.sub("<h2>.$", "</h2>",fparse_text, flags=re.MULTILINE)
     temp = re.sub("</h2>", "</h2> ",fparse_text, flags=re.MULTILINE)
@@ -121,7 +121,7 @@ def fparse(fparser_arg):
 
 #####################H1#####################
     fparse_text = temp
-    temp = re.sub("#", "<h1>",fparse_text, flags=re.MULTILINE)
+    temp = re.sub("#1#", "<h1>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<h1>[\s|$|\n]", "</h1>",temp, flags=re.MULTILINE)
     temp = re.sub("<h1>.$", "</h1>",fparse_text, flags=re.MULTILINE)
     temp = re.sub("</h1>", "</h1> ",fparse_text, flags=re.MULTILINE)
@@ -136,12 +136,15 @@ def fparse(fparser_arg):
 #   |__ <   | |    | / __| __/ __|
 #   ___) |  | |____| \__ \ |_\__ \
 #  |____(_) |______|_|___/\__|___/
-#################################################################################                     
+#################################################################################      
+
+    #####################BULLETLIST#####################          
     fparse_text = temp
     temp = re.sub("''", "<li>",fparse_text, flags=re.MULTILINE)
     fparse_text = re.sub("<li>[\s|$|\n]", "</li>", temp, flags=re.MULTILINE)
     temp = re.sub("</li>", "</li> ",fparse_text, flags=re.MULTILINE)
     fparse_text = temp
+    
 
 
 
