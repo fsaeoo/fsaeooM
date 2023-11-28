@@ -6,30 +6,47 @@ app = Flask(__name__)
 @app.route("/")
 def homepage(): 
     template =fsaeooMParser.fparse("""
-    @~~ comment
-    text
-                                      ;;text;;
-                                      //text// 
-                                      __text__ 
-                                      ``text`` 
-                                      ~~text
-                                    text~~ 
-                                 #heading#
-                                  ##heading##
-                                  ###heading###
-                                  ####heading####
-                                  #####heading#####
-                                  ######heading######
+@~~ comment
+text
+;;text;;
+//text// 
+__text__ 
+``text`` 
+~~text
+text~~ 
+#heading#
+##heading##
+###heading###
+####heading####
+#####heading#####
+######heading######
+''Element''
+
                                   
-                                  
-                                  
-                                  
-                                  text
                                         """)
     context = {}
     return template
 
 app.run(debug=True)
+# print(fsaeooMParser.fparse("""
+# @~~ comment
+# text
+# ;;text;;
+# //text// 
+# __text__ 
+# ``text`` 
+# ~~text
+# text~~ 
+# #heading#
+# ##heading##
+# ###heading###
+# ####heading####
+# #####heading#####
+# ######heading######
+# ''List''
+
+                                  
+#                                         """))
 
 # print(fsaeooMParser.fparse("""@~~ comment <br>
 #      newline here //italic//
